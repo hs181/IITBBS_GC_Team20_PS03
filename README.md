@@ -42,12 +42,12 @@ We have also applied the info() method to chech whether there were any missing v
   
  For visualisation purpose, we have used heatmaps and boxplots to observe the correlation and the outliers in our data respectively. Following are the images we obtained:
 
-  ## HEATMAP WITHOUT SMOTE
+  ## _HEATMAP WITHOUT SMOTE_
 ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Corrleation_plots/CORR_WITHOUT_SMOTE.png)
-  ## HEATMAP WITH SMOTE
+  ## _HEATMAP WITH SMOTE_
 ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Corrleation_plots/CORR_WITH_SMOTE.png)
   
-  ## BOXPLOT FOR SOME PARAMETERS
+  ## _BOXPLOT FOR SOME PARAMETERS_
   
  ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Box-plots-visualisation/Mud.png)
  ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Box-plots-visualisation/P15.png)
