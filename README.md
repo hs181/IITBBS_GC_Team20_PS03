@@ -16,11 +16,11 @@ iv)Training with different ML algorithms
 
 v) Training with Deep Learning algorithm
 
-vi) predicting the results
+vi) Computing the F1 SCORES
 
-vii) computing the F1 SCORE
+vii) Creating a web app using ANVIL app designer
 
-viii) Creating a web app using ANVIL app designer
+viii) Contacts of contributors
 
 # Getting Started
 
@@ -58,3 +58,58 @@ We have also applied the info() method to chech whether there were any missing v
   ![image](https://user-images.githubusercontent.com/84396869/159155069-7fd184fb-358d-414e-91e6-5fc5734920f8.png)
 
   We have tried to remove the outliers so as to simplify our future ML models but when we observed the box plots we see that outliers mostly consist of the minority class and removing them will mean removing the minority class data which might affect our accuracy of our ML model hence we have decided to not do so.
+  
+  # TRAINING WITH DIFFERENT MACHINE LEARNING ALGORITHMS
+  
+We have first used logistic regression as it is a basic algorithm for binary classification without using SMOTE and with using SMOTE and observed that we were getting better results with SMOTE and then we have decided to continue to use SMOTE for the rest of the algorithms
+Following are the classification algorithms we used to train our model on the given dataset:
+  1)Decision Tree classifier
+  2)Light GBM
+  3)Logistic Regression
+  4) Naive Bayes
+  5) Random Classifier with 50 decision trees 
+  6) Random Classifier with 100 decision trees 
+  7) Random Classifier with 150 decision trees 
+  8) Support Vector Machine with radial basis function as our kernel
+  9) XG BOOST
+  
+ # TRAINING WITH DEEP LEARNING ALGORITHM (ARITFICIAL NEURAL NETWORK)
+  
+  We have also used the deep learning algorithm since they are mostly known for their powerful computation. We have initially created a shallow learning network which was producing results close to 95 %. Then we tried using the deep learning network also known as ANN which is mainly used in classification and regression
+  We choose the following parameters while training with ANN:
+   i) batch_size=32
+  ii) epochs=20( The accuracy was converging after the 11th epoch)
+  iii)loss='binary_crossentropy' (This is specifically used for binary classification')
+  iv) optimizer='adam' (The most useful one)
+ 
+ # COMPUTING THE F1 SCORES
+  
+  |MODEL|F1 SCORE IN PERCENT|
+  |-----|-------------------|
+  |LOGISTIC REGRESSION WITHOUT SMOTE|85.5|
+  |LOGISTIC REGRESSION WITH SMOTE|96.153|
+  |DECISION TREE CLASSIFIER|99.83|
+  |LIGHT GBM|99.9252|
+  |NAIVE BAYES|91.287|
+  |RANDOM FOREST CLASSIFIER WITH 50 DECISION TREES|99.9807|
+  |RANDOM FOREST CLASSIFIER WITH 100 DECISION TREE|99.98604|
+  |RANDOM FOREST CLASSIFIER WITH 150 DECISION TREE|99.98677|
+  |SVM (KERNEL=RBF)|99.21|
+  |XG BOOST|99.97|
+  
+  # CREATING THE WEB APP USING ANVIL APP DESIGNER
+  
+  Anvil is one of the most sophisticated website to create web apps exclusively in python. The main reason for us to use this anvil is because it enables an uplink to which we can connect to google colab and run it at our web app backend. 
+  You can check out the app link here :
+  <p> https://water-quality-prediction-team20.anvil.app
+    
+ # CONTACTS OF CONTRIBUTORS
+    
+Harshit Saini ---- <hs18@iitbbs.ac.in>
+    
+Vamsi Bharadwaj ---- <cvb15@iitbbs.ac.in>
+    
+Raghu Vamsidhar ---- <srv12@iitbbs.ac.in>
+    
+K. Harish ---------- <kh16@iitbbs.ac.in>
+  
