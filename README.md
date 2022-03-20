@@ -39,17 +39,18 @@ We have also applied the info() method to chech whether there were any missing v
   
  For visualisation purpose, we have used heatmaps and boxplots to observe the correlation and the outliers in our data respectively. Following are the images we obtained:
 
-  # HEATMAP WITHOUT SMOTE
+  ## HEATMAP WITHOUT SMOTE
 ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Corrleation_plots/CORR_WITHOUT_SMOTE.png)
-  # HEATMAP WITH SMOTE
+  ## HEATMAP WITH SMOTE
 ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Corrleation_plots/CORR_WITH_SMOTE.png)
-  #BOXPLOT FOR SOME PARAMETERS
+  
+  ## BOXPLOT FOR SOME PARAMETERS
   
  ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Box-plots-visualisation/Mud.png)
  ![alt text](https://github.com/hs181/IITBBS_GC_Team20_PS03/blob/main/Box-plots-visualisation/P15.png)
   
   
-  #OBSERVING THE EFFECT OF OUTLIERS
+ # OBSERVING THE EFFECT OF OUTLIERS
  
   
   We have tried to remove the outliers so as to simplify our future ML models but when we observed the box plots we see that outliers mostly consist of the minority class and removing them will mean removing the minority class data which might affect our accuracy of our ML model hence we have decided to not do so.
