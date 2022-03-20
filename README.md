@@ -25,13 +25,16 @@ viii) Creating a web app using ANVIL app designer
 # Getting Started
 
 The training dataset was uploaded in the google drive in the following link:
-
+<p> https://drive.google.com/file/d/1HBbbwZ5cCj_Xp6yR8MTkTgDuSOVo9dj5/view
+  
 This dataset path was imported into the "GOOGLE COLAB" which is an online based compiler for ML algorithms, which has most of the libraries preinstalled. All the necessary libraries like 'numpy', 'pandas', and 'matplotlib' were imported so that we can use them on our dataset.
 
 # Data Preprocessing 
 
 First we have imported the dataset in the pandas frame using the pandas library that we imported before, and created the matrix of features and the dependent variable vector and we have also observed that there were minority classes in the dataset which might be ignored by our model during prediction. Hence we have applied SMOTE (synthetic minority oversampling technique) to increase the number of minority samples in our data so that our ML model won't ignore them during training part. Further information can be read in the following link
+  
 <p> https://towardsdatascience.com/smote-fdce2f605729
+  
 
 We have also applied the info() method to chech whether there were any missing values in the data and found no missing values and since all the training data was having numerical datatype, we don't need to encode any data as well. 
 
@@ -52,5 +55,6 @@ We have also applied the info() method to chech whether there were any missing v
   
  # OBSERVING THE EFFECT OF OUTLIERS
  
-  
+  ![image](https://user-images.githubusercontent.com/84396869/159155069-7fd184fb-358d-414e-91e6-5fc5734920f8.png)
+
   We have tried to remove the outliers so as to simplify our future ML models but when we observed the box plots we see that outliers mostly consist of the minority class and removing them will mean removing the minority class data which might affect our accuracy of our ML model hence we have decided to not do so.
